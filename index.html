@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="weather.css">
+    
+</head>
+<body>
+    <Audio id = "myaudio"></Audio>
+    <div class="container">
+
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" id = "input-box">
+                <button class="fa-solid fa-magnifying-glass" id = "search-btn"> </button>
+                <button class="fa-solid fa-location-arrow" id = "location-btn"> </button>
+           
+            </div>
+
+        </div>
+        
+        <div class="not_found">
+            <h1>Sorry, Location Not found!!!</h1>
+            <img src="./images/error.png" alt="ERROR 404">
+        </div>
+        <div class="weather-body">
+            <img src="rainy.gif" alt =  "Weather Image" class = "weather-img">
+
+            <div class="weather-box">
+                
+                <p  class = "tempi"> Temperature <span class="temp">  0 </span>  °C </p>
+                <!--<p  class = "temp"> MAX: <span class="max_temp">  45 </span> <sup> °C</sup></p>-->
+
+                <p class="desc"> rainy </p>
+    
+            </div>
+            <div class="details">
+                <div class="humid">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text"> 
+                        <p>Humidity</p>
+                       <p> <span id="humid"> 45</span>%</p> 
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text"> 
+                        <p>Wind</p>
+                        <p><span id="wind"> 12</span>km/hr </p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src = "weather.js"></script>
+    <script src="https://kit.fontawesome.com/d91a74906b.js" crossorigin="anonymous"></script>
+</body>
+</html>

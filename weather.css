@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;      /*horizontally centre*/
+    align-items: center;             /*vertically centre*/
+    background-color: azure;
+}
+
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;     
+    justify-content: space-between;
+    align-items: center; 
+}
+.search-box input{
+    width:84%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+}
+.search-box input::placeholder{
+    color:black;
+    font-weight: bold;
+
+}
+.search-box button{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 2px;
+}
+.search-box button:hover{
+    color: white;
+    background-color:black ;
+}
+.weather-body button{
+    height: 46px;
+    border-radius: 40%;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 2px;
+    background-color: rgba(192, 193, 255, 0.466);
+}
+.weather-body button:hover{
+    color: white;
+    background-color:purple ;
+}
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+.weather-body img{
+    width: 60%;
+    
+}
+.weather-box{
+    margin-block: 18px;
+    text-align: center;
+
+}
+.weather-box .tempi{
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+}
+.weather-box .box-head{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.weather-box .temp sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 700;
+}
+.weather-box .desc{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.details{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.humid, .wind{
+    display: flex;
+    align-items: center;
+}
+.humid{
+    margin-left: 20px;
+}
+.wind{
+    margin-right: 20px;
+}
+.details i{
+    font-size: 20px;
+    margin: 20px;
+}
+.not_found{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    
+}
+.not_found h1{
+    font-weight: bold;
+    color: gray;
+}
+.not_found img{
+    margin: 20px;
+    margin-left: 40px;
+}
