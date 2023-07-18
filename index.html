@@ -8,55 +8,227 @@
     
 </head>
 <body>
+   
     <Audio id = "myaudio"></Audio>
     <div class="container">
 
-        <div class="header">
-            <div class="search-box">
-                <input type="text" placeholder="Enter your location" id = "input-box">
-                <button class="fa-solid fa-magnifying-glass" id = "search-btn"> </button>
-                <button class="fa-solid fa-location-arrow" id = "location-btn"> </button>
-           
-            </div>
-
-        </div>
-        
-        <div class="not_found">
-            <h1>Sorry, Location Not found!!!</h1>
-            <img src="./images/error.png" alt="ERROR 404">
-        </div>
-        <div class="weather-body">
-            <img src="rainy.gif" alt =  "Weather Image" class = "weather-img">
-
-            <div class="weather-box">
-                
-                <p  class = "tempi"> Temperature <span class="temp">  0 </span>  °C </p>
-                <!--<p  class = "temp"> MAX: <span class="max_temp">  45 </span> <sup> °C</sup></p>-->
-
-                <p class="desc"> rainy </p>
+        <div class="container1">
+            <div class="header">
+                <div class="search-box">
+                    <input type="text" placeholder="Enter your location" id = "input-box">
+                    <button class="fa-solid fa-magnifying-glass" id = "search-btn"> </button>
+                    <button class="fa-solid fa-location-arrow" id = "location-btn"> </button>
+               
+                </div>
     
             </div>
-            <div class="details">
-                <div class="humid">
-                    <i class="fa-sharp fa-solid fa-droplet"></i>
-                    <div class="text"> 
-                        <p>Humidity</p>
-                       <p> <span id="humid"> 45</span>%</p> 
+    
+            
+            <div class="not_found">
+                <h1>Sorry, Location Not found!!!</h1>
+                <img src="./images/error.png" alt="ERROR 404">
+            </div>
+            <div class="weather-body">
+                <img src="rainy.gif" alt =  "Weather Image" class = "weather-img">
+    
+                <div class="weather-box">
+                    
+                    <p  class = "tempi"> Temperature <span class="temp">  0 </span>  °C </p>
+                    <!--<p  class = "temp"> MAX: <span class="max_temp">  45 </span> <sup> °C</sup></p>-->
+    
+                    <p class="desc"> rainy </p>
+        
+                </div>
+                <div class="details">
+                    <div class="humid">
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                        <div class="text"> 
+                            <p>Humidity</p>
+                           <p> <span id="humid"> 45</span>%</p> 
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text"> 
+                            <p>Wind</p>
+                            <p><span id="wind"> 12</span>km/hr </p>
+                           
+                        </div>
                     </div>
                 </div>
-                <div class="wind">
-                    <i class="fa-solid fa-wind"></i>
-                    <div class="text"> 
-                        <p>Wind</p>
-                        <p><span id="wind"> 12</span>km/hr </p>
-                       
-                    </div>
-                </div>
+                <button id = "5days"> Show forecast for 5 days </button>
             </div>
         </div>
+
+        <div class="container2">
+            <div class="head">
+                <button  class="fa-sharp fa-solid fa-arrow-left" id ="backbtn"></button>
+                <div class = "headforecast"><h2 class="forecastheading">5 DAYS FORECAST</h2></div>
+            </div>
+            
+            <div class="containers" id = "day1"> <div class="forecast-body">
+                <div class="forhead">
+                    <div class="dateday">
+                    <div class = "foredate"> <span id="date1">DATE</span> </div></div>
+                </div>
+                <img src="rainy.gif" alt =  "Weather Image" class = "weather-img" id = "day1img">
+                
+                <div class="weather-box">
+                    
+                    <p  class = "tempi"> Temperature <span id="day1temp">  0 </span>  °C </p>
         
+                    <p > <span id="day1desc"></span> </p>
+        
+                </div>
+                <div class="detail">
+                    <div class="humid">
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                        <div class="text"> 
+                            <p>Humidity</p>
+                           <p> <span id="day1humid"> 45</span>%</p> 
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text"> 
+                            <p>Wind</p>
+                            <p><span id="day1wind"> 12</span>km/hr </p>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="containers" id = "day2"> <div class="forecast-body">
+                <div class="forhead">
+                    <div class="dateday">
+                    <div class = "foredate"><span id="date2">DATE</span> </div></div>
+                </div>
+                <img src="rainy.gif" alt =  "Weather Image" class = "weather-img" id = "day2img">
+                
+                <div class="weather-box">
+                    
+                    <p  class = "tempi"> Temperature <span id="day2temp">  0 </span>  °C </p>
+                    <p > <span id="day2desc">desc</span> </p>
+        
+                </div>
+                <div class="detail">
+                    <div class="humid">
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                        <div class="text"> 
+                            <p>Humidity</p>
+                           <p> <span id="day2humid"> 45</span>%</p> 
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text"> 
+                            <p>Wind</p>
+                            <p><span id="day2wind"> 12</span>km/hr </p>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="containers" id = "day3"> <div class="forecast-body">
+                <div class="forhead">
+                    <div class="dateday">
+                    <div class = "foredate"> <span id="date3">DATE</span> </div></div>
+                </div>
+                <img src="rainy.gif" alt =  "Weather Image" class = "weather-img" id = "day3img">
+                
+                <div class="weather-box">
+                    
+                    <p  class = "tempi"> Temperature <span id="day3temp">  0 </span>  °C </p>
+                    <!--<p  class = "temp"> MAX: <span class="max_temp">  45 </span> <sup> °C</sup></p>-->
+    
+                    <p > <span id="day3desc"></span> </p>
+        
+                </div>
+                <div class="detail">
+                    <div class="humid">
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                        <div class="text"> 
+                            <p>Humidity</p>
+                           <p> <span id="day3humid"> 45</span>%</p> 
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text"> 
+                            <p>Wind</p>
+                            <p><span id="day3wind"> 12</span>km/hr </p>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="containers" id = "day4"> <div class="forecast-body">
+                <div class="forhead">
+                    <div class="dateday">
+                        
+                    <div class = "foredate"> <span id="date4">DATE</span> </div></div>
+                </div>
+                <img src="rainy.gif" alt =  "Weather Image" class = "weather-img" id = "day4img">
+                
+                <div class="weather-box">
+                    
+                    <p  class = "tempi"> Temperature <span id="day4temp">  0 </span>  °C </p>
+                    <!--<p  class = "temp"> MAX: <span class="max_temp">  45 </span> <sup> °C</sup></p>-->
+    
+                    <p > <span id="day4desc"></span> </p>
+        
+                </div>
+                <div class="detail">
+                    <div class="humid">
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                        <div class="text"> 
+                            <p>Humidity</p>
+                           <p> <span id="day4humid"> 45</span>%</p> 
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text"> 
+                            <p>Wind</p>
+                            <p><span id="day4wind"> 12</span>km/hr </p>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="containers" id = "day5"> <div class="forecast-body">
+                <div class="forhead">
+                    <div class="dateday">
+                    <div class = "foredate"> <span id="date5">DATE</span> </div></div>
+                </div>
+                <img src="rainy.gif" alt =  "Weather Image" class = "weather-img" id = "day5img">
+                
+                <div class="weather-box">
+                    
+                    <p  class = "tempi"> Temperature <span id="day5temp">  0 </span>  °C </p>
+                    <p > <span id="day5desc"></span> </p>
+        
+                </div>
+                <div class="detail">
+                    <div class="humid">
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                        <div class="text"> 
+                            <p>Humidity</p>
+                           <p> <span id="day5humid"> 45</span>%</p> 
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text"> 
+                            <p>Wind</p>
+                            <p><span id="day5wind"> 12</span>km/hr </p>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            
+           
+        </div>    
     </div>
 
+    
+    
     <script src = "weather.js"></script>
     <script src="https://kit.fontawesome.com/d91a74906b.js" crossorigin="anonymous"></script>
 </body>
